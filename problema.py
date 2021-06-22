@@ -1,6 +1,7 @@
 from random import randrange as random
 from color_print import PrintService as PS
 
+
 class Puesto:
     def __init__(self, largo: int, id: int):
         self.id = id
@@ -11,7 +12,13 @@ class Solucion_Problema:
         self.solucion = solucion
         self.esfuerzo = e
 
+
     def hacer_swap(self):
+        """
+        Función encargada de realizar un swap desde la solución original, intercambiando 2 posiciones aleatorias.
+        @return: Nueva solución, realizando un swap aleatorio desde la solución actual
+        @rtype: Solucion_Problema
+        """
         rand_1 = random(0, len(self.solucion))
         rand_2 = random(0, len(self.solucion))
         while rand_1 == rand_2: rand_2 = random(0, len(self.solucion))

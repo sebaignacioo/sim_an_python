@@ -12,7 +12,7 @@ def main():
     ps = PS()
     soluciones: list[Solucion] = []
 
-    i = 1 # Elegir número de instancia
+    i = 2 # Elegir número de instancia
     p = Problema(leer_datos_desde_archivo(i), ps)
     s = Simulated_Annealing(p, ps)
 

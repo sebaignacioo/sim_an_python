@@ -25,16 +25,15 @@ class PrintService:
     def iteracion(self, i: int) -> None:
         self.colorMsg.printColor(f'| Iteración No. {i} |', inicio = '\n\n' + '-' * 30, fin = '-' * (30 - len(str(i))
                                                                                                     + 2) + '\n\n')
-
     def datos_iniciales(self, datos: dict) -> None:
         self.colorMsg.printColor('-' * 80)
         self.colorMsg.printColor('|' + '-' * 5 + ' Datos iniciales ' + '-' * 6 + '|', inicio = '-' * 25,
                                  fin='-' * 25 + '\n')
-        self.colorMsg.printColor('| ' + f'* Cant. Puestos: {datos["n"]}' + ' ' * 9 + '|', inicio='-' * 25,
+        self.colorMsg.printColor('| ' + f'* Cant. Puestos: {datos["n"]}' + ' ' * (9 - len(str(datos['n'])) + 1) + '|', inicio='-' * 25,
                                  fin='-' * 25 + '\n')
-        self.colorMsg.printColor('| ' + f'* T. inicial: {datos["tInicial"]:.0f}' + ' ' * 11 + '|', inicio='-' * 25,
+        self.colorMsg.printColor('| ' + f'* T. inicial: {datos["tInicial"]:.0f}' + ' ' * 9 + '|', inicio='-' * 25,
                                  fin='-' * 25 + '\n')
-        self.colorMsg.printColor('| ' + f'* T. minima: {datos["tMin"]:.1f}' + ' ' * 11 + '|', inicio='-' * 25,
+        self.colorMsg.printColor('| ' + f'* T. minima: {datos["tMin"]:.1f}' + ' ' * 10 + '|', inicio='-' * 25,
                                  fin='-' * 25 + '\n')
         self.colorMsg.printColor('| ' + f'* alpha: {datos["alpha"]:.2f}' + ' ' * 14 + '|', inicio='-' * 25,
                                  fin='-' * 25 + '\n')

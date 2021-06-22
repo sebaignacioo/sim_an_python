@@ -40,17 +40,17 @@ class Instancia_Problema:
             'n': datos_archivo['n'],
             'w': datos_archivo['w'],
             'puestos': puestos,
-            'tInicial': 30.0,
-            'tMin': 0.5,
-            'alpha': 0.6
+            'tInicial': 2000,
+            'tMin': 50,
+            'alpha': 0.75
         }
 
     def calcular_distancia(self, i: int, j: int, puestos) -> float:
         sum = 0.0
         sum += (puestos[i - 1].largo)/2
         sum += (puestos[j - 1].largo)/2
-        for i in range(i, j - 1):
-            sum += puestos[i].largo
+        for k in range(i, j - 2):
+            sum += puestos[k].largo
         return sum
 
     def calcular_esfuerzo(self, sol) -> float:

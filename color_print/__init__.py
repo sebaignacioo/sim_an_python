@@ -82,10 +82,11 @@ class PrintService:
     def reiniciar(self) -> None:
         self.colorMsg.printColor('-' * 80, inicio='\n\n', fin='\n\n')
 
-    def mejor_solucion(self, solucion, n: int) -> None:
+    def mejor_solucion(self, solucion, n: int , m: float, de: float) -> None:
         self.colorMsg.printColor('| Mejor solución |', inicio='\n\n' + '-' * 30,
                                  fin='-' * 30 + '\n\n')
-        self.colorMsg.printColor(f'=> Mejor solución encontrada en {n} iteraciones es:', color='green')
+        self.colorMsg.printColor(f'=> Mejor solución encontrada en 10 iteraciones es:', color='green')
         self.solucion(solucion, color='green')
         self.esfuerzo(solucion, color='green')
-        print('\n')
+        self.colorMsg.printColor(f'\nEstadísticas: Media = {m:.4f} | Desv. Est. = {de:.4f}', inicio = ' ' * 2,
+                                 color='green', fin = '\n')

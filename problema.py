@@ -7,8 +7,8 @@ class Puesto:
         self.largo = largo
 
 class Solucion_Problema:
-    def __init__(self, solucion: list[Puesto], e: float):
-        self.solucion: list[Puesto] = solucion
+    def __init__(self, solucion, e: float):
+        self.solucion = solucion
         self.esfuerzo = e
 
     def hacer_swap(self):
@@ -45,7 +45,7 @@ class Instancia_Problema:
             'alpha': 0.6
         }
 
-    def calcular_distancia(self, i: int, j: int, puestos: list[Puesto]) -> float:
+    def calcular_distancia(self, i: int, j: int, puestos) -> float:
         sum = 0.0
         sum += (puestos[i - 1].largo)/2
         sum += (puestos[j - 1].largo)/2
@@ -53,7 +53,7 @@ class Instancia_Problema:
             sum += puestos[i].largo
         return sum
 
-    def calcular_esfuerzo(self, sol: list[Puesto]) -> float:
+    def calcular_esfuerzo(self, sol) -> float:
         sum = 0.0
         for i in range(1, len(sol)):
             for j in range(i + 1, len(sol) - 1):

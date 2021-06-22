@@ -1,10 +1,11 @@
 from problema import Instancia_Problema as Problema, Solucion_Problema as Solucion
 from sim_an import Simulated_Annealing
 from datos_archivo import leer_datos_desde_archivo
+from statistics import mean as promedio, stdev as desv_est
 
 from color_print import PrintService as PS
 
-def ordenar_soluciones(e: Solucion):
+def obtener_esfuerzo(e: Solucion):
     return e.esfuerzo
 
 def main():
@@ -21,8 +22,8 @@ def main():
         soluciones.append(s.mejorSolucion)
         s.reiniciar()
 
-    soluciones.sort(key = ordenar_soluciones)
-    ps.mejor_solucion(soluciones[0], p.datos['n'])
+    soluciones.sort(key = obtener_esfuerzo)
+    ps.mejor_solucion(soluciones[0], p.datos['n'], promedio(list(map(obtener_esfuerzo, soluciones))), desv_est(list(map(obtener_esfuerzo, soluciones))))
 
 if __name__ == '__main__':
     main()

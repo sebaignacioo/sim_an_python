@@ -1,17 +1,37 @@
-from random import randrange as random
-from color_print import PrintService as PS
+"""
+Este archivo contiene el código relacionado con la instancia del problema y sus soluciones.
+"""
+
+# Importaciones
+from random import randrange as random # Número random
+from color_print import PrintService as PS # Impresion por pantalla
 
 
 class Puesto:
     def __init__(self, largo: int, id: int):
+        """
+        Objeto Puesto. Contiene los datos de cada puesto de la feria.
+
+        @type largo: int
+        @param largo: Largo del puesto
+        @type id: int
+        @param id: ID del puesto (números correlativos)
+        """
         self.id = id
         self.largo = largo
 
 class Solucion_Problema:
     def __init__(self, solucion, e: float):
+        """
+        Objeto que representa una solución del problema.
+
+        @type solucion: list[Puesto]
+        @param solucion: Lista de puestos en el órden de la solución.
+        @type e: float
+        @param e: Esfuerzo calculado para la solución
+        """
         self.solucion = solucion
         self.esfuerzo = e
-
 
     def hacer_swap(self):
         """

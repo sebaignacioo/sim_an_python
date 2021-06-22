@@ -7,7 +7,7 @@
 * **1er semestre - 2021**
 
 **Integrantes**:
-* Sebastián García Delgadillo
+* Sebastián García Delgadillqo
 * Felipe Olivares Abarca
 * Ignacio Tornquist Whittaker
 

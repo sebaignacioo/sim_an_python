@@ -31,9 +31,9 @@ class PrintService:
                                  fin='-' * 25 + '\n')
         self.colorMsg.printColor('| ' + f'* Cant. Puestos: {datos["n"]}' + ' ' * (9 - len(str(datos['n'])) + 1) + '|', inicio='-' * 25,
                                  fin='-' * 25 + '\n')
-        self.colorMsg.printColor('| ' + f'* T. inicial: {datos["tInicial"]:.0f}' + ' ' * 9 + '|', inicio='-' * 25,
+        self.colorMsg.printColor('| ' + f'* T. inicial: {datos["t_inicial"]:.0f}' + ' ' * 9 + '|', inicio='-' * 25,
                                  fin='-' * 25 + '\n')
-        self.colorMsg.printColor('| ' + f'* T. minima: {datos["tMin"]:.1f}' + ' ' * 10 + '|', inicio='-' * 25,
+        self.colorMsg.printColor('| ' + f'* T. minima: {datos["t_min"]:.1f}' + ' ' * 9 + '|', inicio='-' * 25,
                                  fin='-' * 25 + '\n')
         self.colorMsg.printColor('| ' + f'* alpha: {datos["alpha"]:.2f}' + ' ' * 14 + '|', inicio='-' * 25,
                                  fin='-' * 25 + '\n')

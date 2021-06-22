@@ -22,15 +22,15 @@ class Solucion_Problema:
         return n_sol
 
 class Instancia_Problema:
-    def __init__(self, datos_archivo: dict, ps: PS):
+    def __init__(self, datos_archivo: dict, datos_iniciales: dict, ps: PS):
         self.ps = ps
-        self.datos = self.generar_datos_iniciales(datos_archivo)
+        self.datos = self.generar_datos_iniciales(datos_archivo, datos_iniciales)
         self.soluciones: list[Solucion_Problema] = []
         self.solucion_generada: Solucion_Problema
         self.sol_actual: int
         self.ps.datos_iniciales(self.datos)
 
-    def generar_datos_iniciales(self, datos_archivo: dict) -> dict:
+    def generar_datos_iniciales(self, datos_archivo: dict, datos_iniciales: dict) -> dict:
         puestos: list[Puesto] = []
         j = 1
         for largo_puestos in datos_archivo['l']:
@@ -40,9 +40,9 @@ class Instancia_Problema:
             'n': datos_archivo['n'],
             'w': datos_archivo['w'],
             'puestos': puestos,
-            'tInicial': 2000,
-            'tMin': 50,
-            'alpha': 0.75
+            't_inicial': datos_iniciales['t_inicial'],
+            't_min': datos_iniciales['t_min'],
+            'alpha': datos_iniciales['alpha']
         }
 
     def calcular_distancia(self, i: int, j: int, puestos) -> float:

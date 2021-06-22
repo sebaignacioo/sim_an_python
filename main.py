@@ -9,17 +9,22 @@ def obtener_esfuerzo(e: Solucion):
     return e.esfuerzo
 
 def main():
+    datos_iniciales = {
+        't_inicial': 2000,
+        't_min': 150,
+        'alpha': 0.85
+    }
     ps = PS()
     soluciones: list[Solucion] = []
 
     i = 2 # Elegir número de instancia
-    p = Problema(leer_datos_desde_archivo(i), ps)
+    p = Problema(leer_datos_desde_archivo(i), datos_iniciales, ps)
     s = Simulated_Annealing(p, ps)
 
     for x in range(10):
         ps.iteracion(x + 1)
         s.simular()
-        soluciones.append(s.mejorSolucion)
+        soluciones.append(s.mejor_solucion)
         s.reiniciar()
 
     soluciones.sort(key = obtener_esfuerzo)

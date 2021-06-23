@@ -1,11 +1,7 @@
 class ColorMessage:
     def __init__(self):
         self.__colorDict = {
-            "red": "\u001b[31m",
-            "green": "\u001b[32m",
-            "blue": "\u001b[34m",
-            "yellow": "\u001b[33m",
-            "reset": "\u001b[0m"
+            "reset": ""
         }
 
     def __resetColor(self) -> None:
@@ -67,10 +63,10 @@ class PrintService:
         self.colorMsg.printColor(f'Esfuerzo: {s1.esfuerzo} -> {s2.esfuerzo} / {estado_sol}', inicio='\n' + ' ' * 10)
 
     def acepta_solucion(self) -> None:
-        self.colorMsg.printColor('✓ Se acepta la nueva solución', color = 'green', inicio=' ' * 10)
+        self.colorMsg.printColor('OK Se acepta la nueva solución', color = 'green', inicio=' ' * 10)
 
     def rechaza_solucion(self) -> None:
-        self.colorMsg.printColor('x Se rechaza la nueva solución', color = 'red', inicio=' ' * 10)
+        self.colorMsg.printColor('X Se rechaza la nueva solución', color = 'red', inicio=' ' * 10)
 
     def criterio_metropolis(self, acepta: bool, p: float, rand: float) -> None:
         self.colorMsg.printColor(f'=> Criterio de metrópolis: p = {p:.4f} | rand = {rand:.4f}', color='yellow',

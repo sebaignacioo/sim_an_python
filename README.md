@@ -14,6 +14,10 @@
 **Tema:** Aplicación de metaheurísticas a problema de optimización, aplicando Simulated Annealing para un problema 
 tipo TSP (Vendedor viajero).
 
+```
+NOTA: Esta es la rama 'nocolor'. Ejecutar el programa en esta rama evita los print con colores.
+```
+
 ## Indice
 
 - [IDE de desarrollo](#ide)

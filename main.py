@@ -10,11 +10,15 @@ que se tiene el dato de la cantidad de personas que recorrerán las tiendas i y 
     - Sebastián García Delgadillo (P1)
     - Felipe Olivares Abarca (P2)
     - Ignacio Tornquist Whittaker (P2)
+
+- Repositorio Github: https://github.com/sebaignacioo/sim_an_python.git
+- Link Github: https://github.com/sebaignacioo/sim_an_python
+- Documentación: https://github.com/sebaignacioo/sim_an_python/wiki
 """
 
 # Importaciones propias
-from problema import Instancia_Problema as Problema, Solucion_Problema as Solucion
-from sim_an import Simulated_Annealing
+from problema import InstanciaProblema as Problema, SolucionProblema as Solucion
+from sim_an import SimulatedAnnealing
 from datos_archivo import leer_datos_desde_archivo
 
 # Estadísticas
@@ -55,7 +59,7 @@ def main():
     # Se leen los datos desde el archivo y se instancia el problema.
     p = Problema(leer_datos_desde_archivo(i), datos_iniciales, ps)
 
-    s = Simulated_Annealing(p, ps) # Se instancia Simulated Annealing
+    s = SimulatedAnnealing(p, ps) # Se instancia Simulated Annealing
 
     # Se realizan las simulaciones
     for x in range(cant_simulaciones):

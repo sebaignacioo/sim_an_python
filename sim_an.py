@@ -1,5 +1,6 @@
 """
-Este archivo contiene el código relacionado con la instancia del problema y sus soluciones.
+Este archivo contiene el código relacionado con la instancia y ejecución de la aplicación de la metaheurística
+Simulated Annealing al la instancia del problema.
 """
 
 # Importaciones

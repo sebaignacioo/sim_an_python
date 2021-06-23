@@ -13,6 +13,7 @@ que se tiene el dato de la cantidad de personas que recorrerán las tiendas i y 
 
 - Repositorio Github: https://github.com/sebaignacioo/sim_an_python.git
 - Link Github: https://github.com/sebaignacioo/sim_an_python
+- Link Replit: https://replit.com/@SebaGarciaD/simanpython
 - Documentación: https://github.com/sebaignacioo/sim_an_python/wiki
 """
 

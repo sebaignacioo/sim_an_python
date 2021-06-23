@@ -20,6 +20,7 @@ tipo TSP (Vendedor viajero).
 - [Instrucciones de ejecución](#ejecucion)
   - [Entorno local](#entorno-local)
   - [Replit](#replit)
+  - [Errores de print](#errores-print)
 - [Descripción](#descripcion)
 - [Documentación](#documetacion)
 
@@ -47,6 +48,21 @@ Una vez revisados los requerimientos, para ejecutar el programa se debe ejecutar
 
 Para ejecutar el programa desde el servicio colaboratívo Replit, es necesario acceder a [este link](https://replit.com/@SebaGarciaD/simanpython "Repositorio Replit") y presionar el botón `run`. El repositorio está configurado para 
 automatizar la tarea de ejecución del programa.
+
+### Errores print
+
+El programa, al ejecutarse en la terminal, posee la caracteristica de hacer algunos prints de colores, con el fin de 
+mejorar el entendimiento del usuario al ejecutar el programa, pero a su vez puede dar a lugar a problemas visuales, 
+si la terminal donde se ejecuta no posee las configuraciones necesarias. En caso de que hayan problemas para 
+observar los resultados de la ejecución, el repositorio de git contiene una rama paralela a `main` llamada `nocolor`,
+la que desactiva las impresiones a color.
+
+Para acceder a la rama `nocolor`, basta con ejecutar el siguiente comando en la terminal (ubicado en el directorio 
+de este repositorio):
+
+```shell
+> git checkout nocolor
+```
 
 ## Descripcion
 Programa en Python que realiza 10 ejecuciones de Simulated Annealing para encontrar la mejor combinación posible de

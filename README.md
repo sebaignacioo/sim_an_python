@@ -39,4 +39,4 @@ Aqui va la descripción
 
 ## Documentacion
 La documentación referente a este repositorio de Github se encuentra en la Wiki
-* [Acceder a la documentación](wiki/Home "Wiki del proyecto")
+* [Acceder a la documentación](https://github.com/sebaignacioo/sim_an_python/wiki "Wiki del proyecto")

@@ -129,7 +129,7 @@ class InstanciaProblema:
         Función que se encarga de calcular el esfuerzo requerido según la solución entregada
 
         @type sol: list[Puesto]
-        @param sol: Objeto Solucion_Problema que contiene los datos de la solución a la que se desea calcular el
+        @param sol: Lista de puestos que contiene los datos de la solución a la que se desea calcular el
         esfuerzo.
         @rtype: float
         @return: Esfuerzo total calculado para la solución

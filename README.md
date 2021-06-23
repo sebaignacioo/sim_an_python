@@ -49,7 +49,11 @@ Para ejecutar el programa desde el servicio colaboratívo Replit, es necesario a
 automatizar la tarea de ejecución del programa.
 
 ## Descripcion
-Aqui va la descripción
+Programa en Python que realiza 10 ejecuciones de Simulated Annealing para encontrar la mejor combinación posible de
+tiendas, tal que la distancia total que recorren todos los asistentes a la misma, sea la mínima, teniendo en cuenta
+que se tiene el dato de la cantidad de personas que recorrerán las tiendas i y j.
+
+* El enunciado de la tarea puede encontrarse en [la wiki del proyecto](https://github.com/sebaignacioo/sim_an_python/wiki/Descripcion "Descripción - Wiki")
 
 ## Documentacion
 La documentación referente a este repositorio de Github se encuentra en la Wiki

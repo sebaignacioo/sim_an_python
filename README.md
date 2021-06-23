@@ -38,4 +38,5 @@ Una vez revisados los requerimientos, para ejecutar el programa se debe ejecutar
 Aqui va la descripción
 
 ## Documentacion
-Aquí van los enlaces a la documentación
+La documentación referente a este repositorio de Github se encuentra en la Wiki
+* [Acceder a la documentación](wiki/Home "Wiki del proyecto")

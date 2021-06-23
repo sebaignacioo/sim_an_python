@@ -37,7 +37,7 @@ class SolucionProblema:
         """
         Función encargada de realizar un swap desde la solución original, intercambiando 2 posiciones aleatorias.
         @return: Nueva solución, realizando un swap aleatorio desde la solución actual
-        @rtype: SolucionProblema
+        @rtype: list[Puesto]
         """
         rand_1 = random(0, len(self.solucion))
         rand_2 = random(0, len(self.solucion))

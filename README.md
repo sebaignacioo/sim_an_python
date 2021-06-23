@@ -16,11 +16,20 @@ tipo TSP (Vendedor viajero).
 
 ## Indice
 
+- [IDE de desarrollo](#ide)
 - [Instrucciones de ejecución](#ejecucion)
+  - [Entorno local](#entorno-local)
+  - [Replit](#replit)
 - [Descripción](#descripcion)
 - [Documentación](#documetacion)
 
+# IDE
+Para el desarrollo de este código, se utilizó **PyCharm** como IDE local, y [Replit](https://replit.com/@SebaGarciaD/simanpython "Replit") como 
+servicio colaborativo en linea.
+
 ## Ejecucion
+
+### Entorno local
 
 Para ejecutar el programa, es necesario tener instalado Python en el computador. Este programa fue escrito en la 
 versión 3.9.4, y se recomienda tener al menos la versión 3.8.x.
@@ -33,6 +42,11 @@ Una vez revisados los requerimientos, para ejecutar el programa se debe ejecutar
 (se debe estar trabajando en el directorio de este repositorio):
 * ![Windows][logowindows] o ![Linux][logolinux] `python main.py`
 * ![Windows][logomacos] `python3 main.py`
+
+### Replit
+
+Para ejecutar el programa desde el servicio colaboratívo Replit, es necesario acceder a [este link](https://replit.com/@SebaGarciaD/simanpython "Repositorio Replit") y presionar el botón `run`. El repositorio está configurado para 
+automatizar la tarea de ejecución del programa.
 
 ## Descripcion
 Aqui va la descripción
